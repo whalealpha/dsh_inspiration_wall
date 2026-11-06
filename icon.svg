@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="灵感墙">
+  <rect width="64" height="64" rx="15" fill="#1C1C1E"/>
+  <path d="M32 13c1.6 8.6 4.4 13.4 13 15-8.6 1.6-11.4 6.4-13 15-1.6-8.6-4.4-13.4-13-15 8.6-1.6 11.4-6.4 13-15Z" fill="#FFFFFF"/>
+  <circle cx="45.5" cy="44.5" r="5.5" fill="#0A84FF"/>
+  <circle cx="20.5" cy="47" r="3" fill="#FFB020"/>
+</svg>

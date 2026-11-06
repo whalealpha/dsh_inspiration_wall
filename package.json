@@ -1,0 +1,69 @@
+{
+  "name": "dsh-inspiration-wall",
+  "version": "0.7.5",
+  "type": "module",
+  "description": "A local-first idea wall panel for DeepSeek Harness: text, voice, image, video and files in one note, with star ratings, progress records, completion reviews and real token usage statistics.",
+  "license": "MIT",
+  "author": "dsh-inspiration-wall contributors",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "bundle",
+    "inspiration",
+    "notes",
+    "local-first"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whalealpha/dsh_inspiration_wall.git"
+  },
+  "homepage": "https://github.com/whalealpha/dsh_inspiration_wall#readme",
+  "bugs": {
+    "url": "https://github.com/whalealpha/dsh_inspiration_wall/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "build.mjs",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "src",
+    "scripts",
+    "docs",
+    "assets",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs && node --check client.js && node check.mjs",
+    "test": "node build.mjs && node --check client.js && node check.mjs && node scripts/verify-v05.mjs && node scripts/verify-v051.mjs && node scripts/label-check.mjs",
+    "test:ui": "node scripts/ui-smoke.mjs",
+    "test:host": "node scripts/host-selftest.mjs",
+    "snapshot": "node scripts/snapshot.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

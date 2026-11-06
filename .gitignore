@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output kept in the repo on purpose: client.js is what DSH loads.
+# Remove the next line if you prefer to build client.js during CI instead.
+# client.js
+
+# local snapshots and archives
+backups/
+*.zip
+*.tar.gz
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# scratch files used while developing (underscore prefix)
+_*.py
+_*.mjs
+_*.txt
+*.log
+
+# python
+__pycache__/
+*.pyc
